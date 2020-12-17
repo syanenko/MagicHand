@@ -3,8 +3,9 @@ Who:  Sergey Yanenko
 What: Hand pose detection with OpenCV DNN module and applying shaders effects with OpenGL/GLUT/GLSL  
 Why:  Exploring OpenCV, DNN, OpenGL, GLSL interoperability  
 When: 12/2020  
-How: OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
-     OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
+How:  
+OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
+OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
 Requirements:  
 Hardware: NVidia RTX 2070 or higher  
