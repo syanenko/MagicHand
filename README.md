@@ -6,8 +6,8 @@ When: 12/2020
 How: OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
      OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
-Usage: MagicHand [--help|-h][-v [<file>]]  
--v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified.  
+Usage: MagicHand [--help|-h][-v [`<file`>]]  
+-v: Save video to `<file>`, `<file>` will be 'MagicHand.avi' if not specified.  
   
 PgUp/PgDn switch shaders  
 '+'/'-' zooms in/out  
