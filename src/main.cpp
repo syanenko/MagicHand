@@ -99,8 +99,12 @@ int shader_start_time = 0;
 int shader[MAX_MODE] = {0}; //  Shader programs
 char* text[] = {"No Shader","Copy","Sharpen","Blur","Erosion","Dilation","Laplacian Edge Detection","Prewitt Edge Detection","Sobel Edge Detection","Vignette", "Cross-Hatch","Colored-Cross-Hatch", "NightVision", "ThermalVision", "Posterized", "DreamVision","Pixelation","Toon","Billboard","Grayscale","Sepia","Negative","Halftone","HexPixelation","LineDrawing","LineDrawing2","Scanlines","Worhol","GeenLine","HandLight"};
 
-int mouse_x = 0;
-int mouse_y = 0;
+int mouse_move_x  = 0;
+int mouse_move_y  = 0;
+int mouse_click_x = 0;
+int mouse_click_y = 0;
+int mouse_click_button = 0;
+int mouse_click_state  = 0;
 
 //
 //  OpenGL (GLUT) calls this routine to display the scene
@@ -139,10 +143,16 @@ void display()
       glUniform1f( loc, (GLfloat)(glutGet(GLUT_ELAPSED_TIME) - shader_start_time) / (GLfloat)1000 );
     }
 
-    loc = glGetUniformLocation(shader[mode], "u_mouse");
+    loc = glGetUniformLocation(shader[mode], "u_mouse_move");
     if (loc >= 0)
     {
-      glUniform2f( loc, (GLfloat)mouse_x, (GLfloat)(win_height - mouse_y) );
+      glUniform2f( loc, (GLfloat)mouse_move_x, (GLfloat)(win_height - mouse_move_y) );
+    }
+
+    loc = glGetUniformLocation(shader[mode], "u_mouse_click");
+    if (loc >= 0)
+    {
+      glUniform4f( loc, (GLfloat)mouse_click_x, (GLfloat)(win_height - mouse_click_y), (GLfloat)mouse_click_button, (GLfloat)mouse_click_state );
     }
 
     loc = glGetUniformLocation(shader[mode], "u_hand");
@@ -452,12 +462,23 @@ void procCommandLLine(int argc, char* argv[])
 }
 
 //
-// Mouse
+// Mouse move callback
 //
-void mouse(int x, int y)
+void mouseMove(int x, int y)
 {
-  mouse_x = x;
-  mouse_y = y;
+  mouse_move_x = x;
+  mouse_move_y = y;
+}
+
+//
+// Mouse click callback
+//
+void mouseClick(int button, int state, int x, int y)
+{
+  mouse_click_x = x;
+  mouse_click_y = y;
+  mouse_click_button = button;
+  mouse_click_state  = state;
 }
 
 //
@@ -501,7 +522,8 @@ int main(int argc,char* argv[])
   glutReshapeFunc(reshape);
   glutKeyboardFunc(common_keys);
   glutSpecialFunc(special_keys);
-  glutPassiveMotionFunc(mouse);
+  glutPassiveMotionFunc(mouseMove);
+  glutMouseFunc(mouseClick);
 
   //  Texture to store image
   glGenTextures(1, &cvtex);
