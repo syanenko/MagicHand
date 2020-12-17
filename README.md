@@ -6,6 +6,17 @@ When: 12/2020
 How: OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl
      OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp
 
+
+How to run:
+
+Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing
+and unzip to <...>/MagicHand/model
+
+Download binaries (Win64): https://drive.google.com/file/d/1-nObusdSg19UWQVhH7SOuO40d_cJjhw4/view?usp=sharing
+and unzip to <...>/MagicHand/bin
+
+Run: <...>/MagicHand/bin/MagicHand.exe
+
 Usage: MagicHand [--help|-h][-v [<file>]]
 -v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified.
 

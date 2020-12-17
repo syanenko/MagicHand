@@ -44,7 +44,7 @@ string effects_path = "shaders/effects/";
 #define ADD_PATH(S) (char*)((filters_path + string(S)).c_str())
 #define ADD_EFFECTS_PATH(S) (char*)((effects_path + string(S)).c_str())
 
-int camera_index = 1;      //  OpenCV camera index (0-based)
+int camera_index = 0;      //  OpenCV camera index (0-based)
 cv::VideoCapture cap;      //  OpenCV capture
 int capture_fps = 60;      //  OpenCV capture frame rate
 double video_fps = 30;     //  OpenCV video writer frame rate
@@ -78,7 +78,7 @@ int win_width, win_height; //  Window dimensions
 double win_aspect = 1.0;   //  Window aspect ratio
 
 // Controls
-int mode=0;                //  Shader to use
+int mode=29;                //  Shader to use
 bool draw_axes = false;    //  Draw crosshairs
 double zoom=1;             //  Zoom factor
 int passes=1;              //  Number of passes
