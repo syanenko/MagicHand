@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1267
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shaders", "shaders", "{31C539F3-D155-40D7-8734-2D09D86E1517}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "filters", "filters", "{F82C4D3D-8E18-490D-B794-092FCAE148B4}"
+	ProjectSection(SolutionItems) = preProject
+		shaders\filters\billboard.frag = shaders\filters\billboard.frag
+		shaders\filters\billboard.vert = shaders\filters\billboard.vert
+		shaders\filters\blur.frag = shaders\filters\blur.frag
+		shaders\filters\copy.frag = shaders\filters\copy.frag
+		shaders\filters\copy.frag.save = shaders\filters\copy.frag.save
+		shaders\filters\crosshatch.frag = shaders\filters\crosshatch.frag
+		shaders\filters\crosshatch2.frag = shaders\filters\crosshatch2.frag
+		shaders\filters\dilation.frag = shaders\filters\dilation.frag
+		shaders\filters\dream.frag = shaders\filters\dream.frag
+		shaders\filters\erosion.frag = shaders\filters\erosion.frag
+		shaders\filters\grayscale.frag = shaders\filters\grayscale.frag
+		shaders\filters\grayscale.vert = shaders\filters\grayscale.vert
+		shaders\filters\halftone.frag = shaders\filters\halftone.frag
+		shaders\filters\hexpix.frag = shaders\filters\hexpix.frag
+		shaders\filters\invert.frag = shaders\filters\invert.frag
+		shaders\filters\invert.vert = shaders\filters\invert.vert
+		shaders\filters\laplacian.frag = shaders\filters\laplacian.frag
+		shaders\filters\line.frag = shaders\filters\line.frag
+		shaders\filters\line.vert = shaders\filters\line.vert
+		shaders\filters\line2.frag = shaders\filters\line2.frag
+		shaders\filters\line2.vert = shaders\filters\line2.vert
+		shaders\filters\nvscope.frag = shaders\filters\nvscope.frag
+		shaders\filters\pixelation.frag = shaders\filters\pixelation.frag
+		shaders\filters\posterize.frag = shaders\filters\posterize.frag
+		shaders\filters\prewitt.frag = shaders\filters\prewitt.frag
+		shaders\filters\roto.frag = shaders\filters\roto.frag
+		shaders\filters\roto.vert = shaders\filters\roto.vert
+		shaders\filters\scanlines.frag = shaders\filters\scanlines.frag
+		shaders\filters\scanlines.vert = shaders\filters\scanlines.vert
+		shaders\filters\sepia.frag = shaders\filters\sepia.frag
+		shaders\filters\sepia.vert = shaders\filters\sepia.vert
+		shaders\filters\sharpen.frag = shaders\filters\sharpen.frag
+		shaders\filters\sobel.frag = shaders\filters\sobel.frag
+		shaders\filters\thermal.frag = shaders\filters\thermal.frag
+		shaders\filters\toon.frag = shaders\filters\toon.frag
+		shaders\filters\toon.vert = shaders\filters\toon.vert
+		shaders\filters\vignette.frag = shaders\filters\vignette.frag
+		shaders\filters\worhol.frag = shaders\filters\worhol.frag
+		shaders\filters\worhol.vert = shaders\filters\worhol.vert
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "effects", "effects", "{7E0A9100-54D8-4737-A996-B85F144D4A1E}"
+	ProjectSection(SolutionItems) = preProject
+		shaders\effects\green_line.frag = shaders\effects\green_line.frag
+		shaders\effects\hand_light.frag = shaders\effects\hand_light.frag
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9256D202-3347-473B-ACE0-FBA40B8143AF}"
+	ProjectSection(SolutionItems) = preProject
+		main.vcxproj = main.vcxproj
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "main.vcxproj", "{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Debug|x64.ActiveCfg = Debug|x64
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Debug|x64.Build.0 = Debug|x64
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Debug|x86.ActiveCfg = Debug|x64
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Release|x64.ActiveCfg = Release|x64
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Release|x64.Build.0 = Release|x64
+		{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}.Release|x86.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F82C4D3D-8E18-490D-B794-092FCAE148B4} = {31C539F3-D155-40D7-8734-2D09D86E1517}
+		{7E0A9100-54D8-4737-A996-B85F144D4A1E} = {31C539F3-D155-40D7-8734-2D09D86E1517}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3101B616-B4D4-369F-B7F7-738DF7DFF9A5}
+	EndGlobalSection
+EndGlobal
