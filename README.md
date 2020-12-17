@@ -19,8 +19,8 @@ and unzip to ...\MagicHand\bin
 
 Run: from ...\MagicHand folder: .\bin\MagicHand.exe  
   
-Usage: MagicHand [--help|-h][-v [<file>]]  
--v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified.  
+Usage: MagicHand [--help|-h][-v [`<file`>]]  
+-v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified.  
   
 PgUp/PgDn switch shaders  
 '+'/'-' zooms in/out  
