@@ -7,7 +7,7 @@ How: OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/e
      OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
 Requirements:
-Hardware: NVidia RTX 2070 or higher
+Hardware: NVidia RTX 2070 or higher  
 Software: Windows 7 or higher 
 
 How to run:  
