@@ -41,8 +41,8 @@ using namespace cv;
 
 string filters_path = "shaders/filters/";
 string effects_path = "shaders/effects/";
-#define ADD_PATH(S) (char*)((filters_path + string(S)).c_str())
-#define ADD_EFFECTS_PATH(S) (char*)((effects_path + string(S)).c_str())
+#define FILTERS_PATH(S) (char*)((filters_path + string(S)).c_str())
+#define EFFECTS_PATH(S) (char*)((effects_path + string(S)).c_str())
 
 int camera_index = 0;      //  OpenCV camera index (0-based)
 cv::VideoCapture cap;      //  OpenCV capture
@@ -525,35 +525,35 @@ int main(int argc,char* argv[])
 
   capture(0); // Start capture
    
-  shader[1]  = CreateShaderProg(NULL,  ADD_PATH("copy.frag"));
-  shader[2]  = CreateShaderProg(NULL,  ADD_PATH("sharpen.frag"));
-  shader[3]  = CreateShaderProg(NULL,  ADD_PATH("blur.frag"));
-  shader[4]  = CreateShaderProg(NULL,  ADD_PATH("erosion.frag"));
-  shader[5]  = CreateShaderProg(NULL,  ADD_PATH("dilation.frag"));
-  shader[6]  = CreateShaderProg(NULL,  ADD_PATH("laplacian.frag"));
-  shader[7]  = CreateShaderProg(NULL,  ADD_PATH("prewitt.frag"));
-  shader[8]  = CreateShaderProg(NULL,  ADD_PATH("sobel.frag"));
-  shader[9]  = CreateShaderProg(NULL,  ADD_PATH("vignette.frag"));
-  shader[10] = CreateShaderProg(NULL,  ADD_PATH("crosshatch.frag"));
-  shader[11] = CreateShaderProg(NULL,  ADD_PATH("crosshatch2.frag"));
-  shader[12] = CreateShaderProg(NULL,  ADD_PATH("nvscope.frag"));
-  shader[13] = CreateShaderProg(NULL,  ADD_PATH("thermal.frag"));
-  shader[14] = CreateShaderProg(NULL,  ADD_PATH("posterize.frag"));
-  shader[15] = CreateShaderProg(NULL,  ADD_PATH("dream.frag"));
-  shader[16] = CreateShaderProg(NULL,  ADD_PATH("pixelation.frag"));
-  shader[17] = CreateShaderProg(ADD_PATH("toon.vert"),      ADD_PATH("toon.frag"));
-  shader[18] = CreateShaderProg(ADD_PATH("billboard.vert"), ADD_PATH("billboard.frag"));
-  shader[19] = CreateShaderProg(ADD_PATH("grayscale.vert"), ADD_PATH("grayscale.frag"));
-  shader[20] = CreateShaderProg(ADD_PATH("sepia.vert"),     ADD_PATH("sepia.frag"));
-  shader[21] = CreateShaderProg(ADD_PATH("invert.vert"),    ADD_PATH("invert.frag"));
-  shader[22] = CreateShaderProg(NULL, ADD_PATH("halftone.frag"));
-  shader[23] = CreateShaderProg(NULL, ADD_PATH("hexpix.frag"));
-  shader[24] = CreateShaderProg(ADD_PATH("line.vert"),      ADD_PATH("line.frag"));
-  shader[25] = CreateShaderProg(ADD_PATH("line2.vert"),     ADD_PATH("line2.frag"));
-  shader[26] = CreateShaderProg(ADD_PATH("scanlines.vert"), ADD_PATH("scanlines.frag"));
-  shader[27] = CreateShaderProg(ADD_PATH("worhol.vert"),    ADD_PATH("worhol.frag"));
-  shader[28] = CreateShaderProg(NULL, ADD_EFFECTS_PATH("green_line.frag"));
-  shader[29] = CreateShaderProg(NULL, ADD_EFFECTS_PATH("hand_light.frag"));
+  shader[1]  = CreateShaderProg(NULL,  FILTERS_PATH("copy.frag"));
+  shader[2]  = CreateShaderProg(NULL,  FILTERS_PATH("sharpen.frag"));
+  shader[3]  = CreateShaderProg(NULL,  FILTERS_PATH("blur.frag"));
+  shader[4]  = CreateShaderProg(NULL,  FILTERS_PATH("erosion.frag"));
+  shader[5]  = CreateShaderProg(NULL,  FILTERS_PATH("dilation.frag"));
+  shader[6]  = CreateShaderProg(NULL,  FILTERS_PATH("laplacian.frag"));
+  shader[7]  = CreateShaderProg(NULL,  FILTERS_PATH("prewitt.frag"));
+  shader[8]  = CreateShaderProg(NULL,  FILTERS_PATH("sobel.frag"));
+  shader[9]  = CreateShaderProg(NULL,  FILTERS_PATH("vignette.frag"));
+  shader[10] = CreateShaderProg(NULL,  FILTERS_PATH("crosshatch.frag"));
+  shader[11] = CreateShaderProg(NULL,  FILTERS_PATH("crosshatch2.frag"));
+  shader[12] = CreateShaderProg(NULL,  FILTERS_PATH("nvscope.frag"));
+  shader[13] = CreateShaderProg(NULL,  FILTERS_PATH("thermal.frag"));
+  shader[14] = CreateShaderProg(NULL,  FILTERS_PATH("posterize.frag"));
+  shader[15] = CreateShaderProg(NULL,  FILTERS_PATH("dream.frag"));
+  shader[16] = CreateShaderProg(NULL,  FILTERS_PATH("pixelation.frag"));
+  shader[17] = CreateShaderProg(FILTERS_PATH("toon.vert"),      FILTERS_PATH("toon.frag"));
+  shader[18] = CreateShaderProg(FILTERS_PATH("billboard.vert"), FILTERS_PATH("billboard.frag"));
+  shader[19] = CreateShaderProg(FILTERS_PATH("grayscale.vert"), FILTERS_PATH("grayscale.frag"));
+  shader[20] = CreateShaderProg(FILTERS_PATH("sepia.vert"),     FILTERS_PATH("sepia.frag"));
+  shader[21] = CreateShaderProg(FILTERS_PATH("invert.vert"),    FILTERS_PATH("invert.frag"));
+  shader[22] = CreateShaderProg(NULL, FILTERS_PATH("halftone.frag"));
+  shader[23] = CreateShaderProg(NULL, FILTERS_PATH("hexpix.frag"));
+  shader[24] = CreateShaderProg(FILTERS_PATH("line.vert"),      FILTERS_PATH("line.frag"));
+  shader[25] = CreateShaderProg(FILTERS_PATH("line2.vert"),     FILTERS_PATH("line2.frag"));
+  shader[26] = CreateShaderProg(FILTERS_PATH("scanlines.vert"), FILTERS_PATH("scanlines.frag"));
+  shader[27] = CreateShaderProg(FILTERS_PATH("worhol.vert"),    FILTERS_PATH("worhol.frag"));
+  shader[28] = CreateShaderProg(NULL, EFFECTS_PATH("green_line.frag"));
+  shader[29] = CreateShaderProg(NULL, EFFECTS_PATH("hand_light.frag"));
   
   ErrCheck("init");
 
