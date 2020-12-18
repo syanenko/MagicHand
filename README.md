@@ -33,8 +33,8 @@ Usage: MagicHand [--help|-h][-v [`<file`>]]
 |------|---------|
 | PgUp/PgDn | switch shaders | 
 | '+'/'-' | zooms in/out |
-arrows pan  
-'P'/'p' change number of passes  
+|arrows|pan|
+|'P'/'p'|change number of passes|
 'a' draw axes  
 't', ',' decrease net threshold  
 'T', '.' increase net threshold  
