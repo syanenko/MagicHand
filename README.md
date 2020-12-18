@@ -1,7 +1,7 @@
 ## Magic hand
-### What:  
+#### What:  
 Hand pose detection with OpenCV DNN module and applying shaders effects with OpenGL/GLUT/GLSL  
-### Who  
+#### Who  
 Sergey Yanenko  
 
 Why:  Exploring OpenCV, DNN, OpenGL, GLSL interoperability  
@@ -10,11 +10,11 @@ How:
 OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
 OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
-### Requirements  
+#### Requirements  
 Hardware: NVidia RTX 2070 or higher  
 Software: Windows 7 or higher 
 
-### How to run  
+#### Running  
 Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing  
 and unzip to ...\MagicHand\model  
   
@@ -25,7 +25,8 @@ Run: from ...\MagicHand folder: .\bin\MagicHand.exe
   
 Usage: MagicHand [--help|-h][-v [`<file`>]]  
 -v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified.  
-  
+
+#### Control
 PgUp/PgDn switch shaders  
 '+'/'-' zooms in/out  
 arrows pan  
