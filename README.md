@@ -8,12 +8,12 @@ Exploring OpenCV, DNN, OpenGL, GLSL interoperability
 #### When 
 12/2020
 #### How  
-OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
-OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
+* OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
+* OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
 #### Requirements  
-Hardware: NVidia RTX 2070 or higher  
-Software: Windows 7 or higher 
+* Hardware: NVidia RTX 2070 or higher  
+* Software: Windows 7 or higher 
 
 #### Prerequisites  
 Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing (or use getModels.sh)  
