@@ -29,7 +29,7 @@ cd <your_location>\MagicHand
 
 #### Help
 ```
-Usage: MagicHand [--help|-h][-v [`<file`>]]  
+Usage: MagicHand [-h][-v [`<file`>]]  
 -h: Show this help  
 -v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified  
 ```
@@ -38,10 +38,10 @@ Usage: MagicHand [--help|-h][-v [`<file`>]]
 
 | Keys | Actions |
 |------|---------|
-| PgUp / PgDn | switch shaders | 
-| '+' / '-' | zooms in/out |
-|arrows|pan|
-|'P'/'p'|change number of passes|
+| PgUp / PgDn | *switch shaders* | 
+| '+' / '-' | *zooms in/out* |
+|arrows|*pan*|
+|'P'/'p'|*change number of passes*|
 |'a'|draw axes|
 |'t' or ',' | decrease net threshold|
 |'T' or '.' | increase net threshold| 
