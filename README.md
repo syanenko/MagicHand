@@ -22,7 +22,7 @@ and unzip to ...\MagicHand\model
 Download binaries (Win64): https://drive.google.com/file/d/1-nObusdSg19UWQVhH7SOuO40d_cJjhw4/view?usp=sharing  
 and unzip to ...\MagicHand\bin  
 
-Run: from ...\MagicHand folder: .\bin\MagicHand.exe  
+Run from '...\MagicHand' folder: '.\bin\MagicHand.exe'  
   
 Usage: MagicHand [--help|-h][-v [`<file`>]]  
 -v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified.  
