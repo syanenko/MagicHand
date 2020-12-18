@@ -39,18 +39,18 @@ Usage: MagicHand [-h][-v [`<file`>]]
 
 | Keys | Actions |
 |------|---------|
-| PgUp / PgDn | switch shaders | 
-| '+' / '-' | zooms in/out |
+| PgUp/PgDn | switch shaders | 
+| +/- | zooms in/out |
 |arrows|pan|
-|'P'/'p'|change number of passes|
-|'a'|draw axes|
-|'t' or ',' | decrease net threshold|
-|'T' or '.' | increase net threshold| 
-|'d'|show debug window|
-|'j'| draw joints (focus on debug window)|
-|'r'| draw areas (focus on debug window)|
-|'l'| draw lines (focus on debug window)|
-|'z'| decrease area size (focus on debug window)|
-|'x'| increase area size (focus on debug window)|
+|P / p|change number of passes|
+|a|draw axes|
+|t or , | decrease net threshold|
+|T or . | increase net threshold| 
+|d|show debug window|
+|j| draw joints (focus on debug window)|
+|r| draw areas (focus on debug window)|
+|l| draw lines (focus on debug window)|
+|z| decrease area size (focus on debug window)|
+|x| increase area size (focus on debug window)|
 |Enter| set default views|  
 |Esc|exit|
