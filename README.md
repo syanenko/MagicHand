@@ -41,7 +41,7 @@ Usage: MagicHand [-h][-v [`<file`>]]
 |------|---------|
 | PgUp/PgDn | switch shaders | 
 | +/- | zooms in/out |
-|arrows|pan|
+|Arrows|pan|
 |P / p|change number of passes|
 |a|draw axes|
 |t or , | decrease net threshold|
