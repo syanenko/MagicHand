@@ -32,7 +32,7 @@ cd <your_location>\MagicHand
 ```
 Usage: MagicHand [-h][-v [`<file`>]]  
 -h: Show this help  
--v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified  
+-v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified  
 ```
 
 #### Control
