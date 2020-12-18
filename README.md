@@ -16,7 +16,7 @@ Hardware: NVidia RTX 2070 or higher
 Software: Windows 7 or higher 
 
 #### Prerequisites  
-Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing  
+Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing (or use getModels.sh)  
 and unzip to `<your_location>\MagicHand\model`  
   
 Download binaries (Win64): https://drive.google.com/file/d/1-nObusdSg19UWQVhH7SOuO40d_cJjhw4/view?usp=sharing  
