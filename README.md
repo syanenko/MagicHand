@@ -1,9 +1,9 @@
 ## Magic hand
-***What***  
+#### What  
 Hand pose detection with OpenCV DNN module and applying shaders effects with OpenGL/GLUT/GLSL  
-*#### Who*  
+#### Who  
 Sergey Yanenko  
-#### Why
+#### Why  
 Exploring OpenCV, DNN, OpenGL, GLSL interoperability  
 #### When 
 12/2020
@@ -30,7 +30,8 @@ cd <your_location>\MagicHand
 #### Help
 ```
 Usage: MagicHand [--help|-h][-v [`<file`>]]  
--v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified.  
+-h: Show this help  
+-v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified  
 ```
 
 #### Control
