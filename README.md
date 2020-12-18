@@ -1,6 +1,6 @@
 ## Magic hand
 #### What  
-Hand pose detection with OpenCV DNN module and applying shaders effects with OpenGL/GLUT/GLSL  
+Hand pose detection with OpenCV DNN module, applying shaders-based effects with OpenGL/GLUT/GLSL  
 #### Who  
 Sergey Yanenko  
 #### Why  
