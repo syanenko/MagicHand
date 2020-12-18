@@ -14,7 +14,7 @@
     <ProjectGuid>{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>main</ProjectName>
+    <ProjectName>MagicHand</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
