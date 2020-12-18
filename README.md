@@ -38,11 +38,11 @@ Usage: MagicHand [-h][-v [`<file`>]]
 
 | Keys | Actions |
 |------|---------|
-| **PgUp / PgDn** | switch shaders | 
-| **'+' / '-'** | zooms in/out |
-|**arrows**|pan|
-|**'P'/'p'**|change number of passes|
-|**'a'**|draw axes|
+| PgUp / PgDn | switch shaders | 
+| '+' / '-' | zooms in/out |
+|arrows|pan|
+|'P'/'p'|change number of passes|
+|'a'|draw axes|
 |'t' or ',' | decrease net threshold|
 |'T' or '.' | increase net threshold| 
 |'d'|show debug window|
