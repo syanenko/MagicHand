@@ -28,8 +28,11 @@ Usage: MagicHand [--help|-h][-v [`<file`>]]
 -v: Save video to `<file`>, `<file`> will be 'MagicHand.avi' if not specified.  
 
 #### Control
-PgUp/PgDn switch shaders  
-'+'/'-' zooms in/out  
+
+| Keys | Actions |
+|------|---------|
+| PgUp/PgDn | switch shaders | 
+| '+'/'-' | zooms in/out |
 arrows pan  
 'P'/'p' change number of passes  
 'a' draw axes  
