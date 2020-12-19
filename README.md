@@ -4,7 +4,7 @@ Hand pose detection with OpenCV DNN module, applying shaders-based effects with 
 #### Who  
 Sergey Yanenko  
 #### Why  
-Exploring OpenCV, DNN, OpenGL, GLSL interoperability  
+Explore OpenCV, DNN, OpenGL interoperability, play with GLSL  
 #### When 
 12/2020
 #### How  
