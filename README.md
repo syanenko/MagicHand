@@ -80,9 +80,13 @@ Following uniforms are accessible in shaders:
 uniform sampler2D u_texture;     // - Image, captured from camera
 uniform vec2      u_resolution;  // - Image size
 uniform float     u_time;        // - Shader running time in seconds
-uniform vec2      u_mouse_move;  // - Free mouse move coordinates as retuned by glutPassiveMotionFunc(), see: https://www.opengl.org/resources/libraries/glut/spec3/node51.html
-uniform vec4      u_mouse_click; // - Mouse click position and state as retuned by glutMouseFunc(), see: https://www.opengl.org/resources/libraries/glut/spec3/node50.html
-uniform vec2      u_hand[22];    // - Hand points, detected by DNN module, see: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/
+uniform vec2      u_mouse_move;  // - Free mouse move coordinates as retuned by glutPassiveMotionFunc()
+uniform vec4      u_mouse_click; // - Mouse click position and state as retuned by glutMouseFunc()
+uniform vec2      u_hand[22];    // - Hand points, detected by DNN module
 ```
 
-Please find DNN model decription in following paper: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University: https://arxiv.org/pdf/1704.07809.pdf.
+Glut functions reference: https://www.opengl.org/resources/libraries/glut/spec3/node51.html
+                          https://www.opengl.org/resources/libraries/glut/spec3/node50.html
+
+General idea: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/
+Detailed description: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University: https://arxiv.org/pdf/1704.07809.pdf.
