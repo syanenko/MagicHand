@@ -44,7 +44,7 @@ string effects_path = "shaders/effects/";
 #define FILTERS_PATH(S) (char*)((filters_path + string(S)).c_str())
 #define EFFECTS_PATH(S) (char*)((effects_path + string(S)).c_str())
 
-int camera_index = 1;      //  OpenCV camera index (0-based)
+int camera_index = 0;      //  OpenCV camera index (0-based)
 cv::VideoCapture cap;      //  OpenCV capture
 int capture_fps = 60;      //  OpenCV capture frame rate
 double video_fps = 30;     //  OpenCV video writer frame rate
