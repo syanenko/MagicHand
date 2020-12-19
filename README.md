@@ -16,6 +16,20 @@ Explore OpenCV, DNN, OpenGL interoperability, play with GLSL
 More about CUDA architecture versions: https://developer.nvidia.com/cuda-gpus   
 * *Software:* Windows 7 or higher 
 
+#### Running from pre-built binaries
+
+1. Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing (or use getModels.sh)  
+and unzip to `<your_location>\MagicHand\model`  
+  
+1. Download required DLLs: https://drive.google.com/file/d/115ty4cpAiCNTgYNGquw9NbH4c7g5JztJ/view?usp=sharing 
+and unzip to `<your_location>\MagicHand\bin`  
+
+1. Run
+```
+cd <your_location>\MagicHand
+.\bin\MagicHand.exe
+```
+
 #### Compiling from sources
 1. Install NVIDIA CUDA Toolkit 10.2: https://developer.nvidia.com/cuda-10.2-download-archive  
 1. Install cuDNN for CUDA  10.2: https://developer.nvidia.com/rdp/cudnn-download  
@@ -28,20 +42,6 @@ More about CUDA architecture versions: https://developer.nvidia.com/cuda-gpus
 1. Build desired configuration
 1. Be sure that `freeglut.dll` and `glew32.dll` are in the path or place them in `<your_location>\MagicHand\bin`.
 1. Run: `Ctrl+F5` or
-```
-cd <your_location>\MagicHand
-.\bin\MagicHand.exe
-```
-
-#### Running from pre-built binaries
-
-1. Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing (or use getModels.sh)  
-and unzip to `<your_location>\MagicHand\model`  
-  
-1. Download required DLLs: https://drive.google.com/file/d/115ty4cpAiCNTgYNGquw9NbH4c7g5JztJ/view?usp=sharing 
-and unzip to `<your_location>\MagicHand\bin`  
-
-1. Run
 ```
 cd <your_location>\MagicHand
 .\bin\MagicHand.exe
