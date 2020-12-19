@@ -44,7 +44,7 @@ string effects_path = "shaders/effects/";
 #define FILTERS_PATH(S) (char*)((filters_path + string(S)).c_str())
 #define EFFECTS_PATH(S) (char*)((effects_path + string(S)).c_str())
 
-int camera_index = 0;      //  OpenCV camera index (0-based)
+int camera_index = 1;      //  OpenCV camera index (0-based)
 cv::VideoCapture cap;      //  OpenCV capture
 int capture_fps = 60;      //  OpenCV capture frame rate
 double video_fps = 30;     //  OpenCV video writer frame rate
@@ -78,7 +78,7 @@ int win_width, win_height; //  Window dimensions
 double win_aspect = 1.0;   //  Window aspect ratio
 
 // Controls
-int mode=29;                //  Shader to use
+int mode=29;               //  Shader to use
 bool draw_axes = false;    //  Draw crosshairs
 double zoom=1;             //  Zoom factor
 int passes=1;              //  Number of passes
@@ -95,7 +95,7 @@ int  area_size    = 22;
 float frame_time = 0;
 int shader_start_time = 0;
 
-#define MAX_MODE 30
+#define MAX_MODE 31
 int shader[MAX_MODE] = {0}; //  Shader programs
 char* text[] = {"No Shader","Copy","Sharpen","Blur","Erosion","Dilation","Laplacian Edge Detection","Prewitt Edge Detection","Sobel Edge Detection","Vignette", "Cross-Hatch","Colored-Cross-Hatch", "NightVision", "ThermalVision", "Posterized", "DreamVision","Pixelation","Toon","Billboard","Grayscale","Sepia","Negative","Halftone","HexPixelation","LineDrawing","LineDrawing2","Scanlines","Worhol","GeenLine","HandLight"};
 
@@ -413,7 +413,9 @@ void capture(int k)
 //
 void printUsage()
 {
-  printf("Usage: MagicHand [--help|-h][-v [<file>]]\n-v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified.\n\
+  printf("Usage: MagicHand [-h][-v [<file>]]\n\
+-h: Show this help\n\
+-v: Save video to <file>, <file> will be 'MagicHand.avi' if not specified\n\
 \n\
 PgUp/PgDn switch shaders\n\
 '+'/'-' zooms in/out\n\
@@ -576,6 +578,7 @@ int main(int argc,char* argv[])
   shader[27] = CreateShaderProg(FILTERS_PATH("worhol.vert"),    FILTERS_PATH("worhol.frag"));
   shader[28] = CreateShaderProg(NULL, EFFECTS_PATH("green_line.frag"));
   shader[29] = CreateShaderProg(NULL, EFFECTS_PATH("hand_light.frag"));
+  shader[30] = CreateShaderProg(NULL, EFFECTS_PATH("book_of_shaders.frag"));
   
   ErrCheck("init");
 
