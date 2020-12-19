@@ -12,7 +12,7 @@ Explore OpenCV, DNN, OpenGL interoperability, play with GLSL
 * OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
 #### Requirements  
-* *Hardware:* NVidia RTX 2070 or higher  
+* *Hardware:* Nvidia Geforce RTX 2060 or higher (OpenCV build for CUDA compute capability 7.5, you can rebuild it for GPU you have). More about CUDA architecture versionas: https://developer.nvidia.com/cuda-gpus   
 * *Software:* Windows 7 or higher 
 
 #### Compiling from sources
