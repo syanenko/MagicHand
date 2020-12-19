@@ -93,4 +93,4 @@ https://www.opengl.org/resources/libraries/glut/spec3/node50.html
 
 General idea: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/  
 
-Detailed description: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University (https://arxiv.org/pdf/1704.07809.pdf).
+Detailed description: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University (https://github.com/syanenko/MagicHand/blob/main/doc/1704.07809.pdf).
