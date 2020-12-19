@@ -85,4 +85,4 @@ uniform vec4      u_mouse_click; // - Mouse click position and state as retuned 
 uniform vec2      u_hand[22];    // - Hand points, detected by DNN module, see: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/
 ```
 
-Please find deails about DNN model in following paper: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University: https://arxiv.org/pdf/1704.07809.pdf.
+Please find DNN model decription in following paper: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University: https://arxiv.org/pdf/1704.07809.pdf.
