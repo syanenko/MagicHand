@@ -50,8 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "filters", "filters", "{F82C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "effects", "effects", "{7E0A9100-54D8-4737-A996-B85F144D4A1E}"
 	ProjectSection(SolutionItems) = preProject
-		shaders\effects\green_line.frag = shaders\effects\green_line.frag
 		shaders\effects\hand_light.frag = shaders\effects\hand_light.frag
+		shaders\effects\hand_test.frag = shaders\effects\hand_test.frag
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9256D202-3347-473B-ACE0-FBA40B8143AF}"
@@ -60,7 +60,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "main", "main.vcxproj", "{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MagicHand", "main.vcxproj", "{CCBBE8EC-531B-4E20-81A4-FBEA709FCAD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

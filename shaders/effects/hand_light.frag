@@ -1,10 +1,11 @@
 // Hand light
 
 uniform sampler2D u_texture;
-uniform vec2 u_resolution;
-uniform float u_time;
-uniform vec2 u_mouse;
-uniform vec2 u_hand[22];
+uniform vec2      u_resolution;
+uniform float     u_time;
+uniform vec2      u_mouse_move;
+uniform vec4      u_mouse_click;
+uniform vec2      u_hand[22];
 
 float circle(in vec2 _st, in float _radius)
 {
@@ -36,8 +37,10 @@ void main()
     color = 1.0;
   else
     // color = vec4(vec3(distance(st, u_mouse / u_resolution.xy ) * 2.0), 1.0);
+    // color = vec4(vec3(distance(st, vec2(u_mouse_click.x, u_mouse_click.y) / u_resolution.xy ) * 2.0), 1.0);
     color = vec4(vec3(distance(st, vec2(1.0) - handpos / u_resolution.xy ) * 2.0), 1.0);
-    
+
+
   
   gl_FragColor = texture2D(u_texture, gl_TexCoord[0].st) - color;
 }

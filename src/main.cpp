@@ -78,7 +78,7 @@ int win_width, win_height; //  Window dimensions
 double win_aspect = 1.0;   //  Window aspect ratio
 
 // Controls
-int mode=29;               //  Shader to use
+int mode=28;               //  Shader to use
 bool draw_axes = false;    //  Draw crosshairs
 double zoom=1;             //  Zoom factor
 int passes=1;              //  Number of passes
@@ -95,9 +95,9 @@ int  area_size    = 22;
 float frame_time = 0;
 int shader_start_time = 0;
 
-#define MAX_MODE 31
+#define MAX_MODE 30
 int shader[MAX_MODE] = {0}; //  Shader programs
-char* text[] = {"No Shader","Copy","Sharpen","Blur","Erosion","Dilation","Laplacian Edge Detection","Prewitt Edge Detection","Sobel Edge Detection","Vignette", "Cross-Hatch","Colored-Cross-Hatch", "NightVision", "ThermalVision", "Posterized", "DreamVision","Pixelation","Toon","Billboard","Grayscale","Sepia","Negative","Halftone","HexPixelation","LineDrawing","LineDrawing2","Scanlines","Worhol","GeenLine","HandLight"};
+char* text[] = {"No Shader","Copy","Sharpen","Blur","Erosion","Dilation","Laplacian Edge Detection","Prewitt Edge Detection","Sobel Edge Detection","Vignette", "Cross-Hatch","Colored-Cross-Hatch", "NightVision", "ThermalVision", "Posterized", "DreamVision","Pixelation","Toon","Billboard","Grayscale","Sepia","Negative","Halftone","HexPixelation","LineDrawing","LineDrawing2","Scanlines","Worhol","Hand Light","Hand Test"};
 
 int mouse_move_x  = 0;
 int mouse_move_y  = 0;
@@ -576,9 +576,8 @@ int main(int argc,char* argv[])
   shader[25] = CreateShaderProg(FILTERS_PATH("line2.vert"),     FILTERS_PATH("line2.frag"));
   shader[26] = CreateShaderProg(FILTERS_PATH("scanlines.vert"), FILTERS_PATH("scanlines.frag"));
   shader[27] = CreateShaderProg(FILTERS_PATH("worhol.vert"),    FILTERS_PATH("worhol.frag"));
-  shader[28] = CreateShaderProg(NULL, EFFECTS_PATH("green_line.frag"));
-  shader[29] = CreateShaderProg(NULL, EFFECTS_PATH("hand_light.frag"));
-  shader[30] = CreateShaderProg(NULL, EFFECTS_PATH("book_of_shaders.frag"));
+  shader[28] = CreateShaderProg(NULL, EFFECTS_PATH("hand_light.frag"));
+  shader[29] = CreateShaderProg(NULL, EFFECTS_PATH("hand_test.frag"));
   
   ErrCheck("init");
 
