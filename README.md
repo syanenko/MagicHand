@@ -89,6 +89,8 @@ Glut functions reference:
 https://www.opengl.org/resources/libraries/glut/spec3/node51.html  
 https://www.opengl.org/resources/libraries/glut/spec3/node50.html  
   
-Hand pose detection: general idea: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/  
-  
-Hand pose detection: detailed description: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University (https://arxiv.org/pdf/1704.07809.pdf).
+#### Hand pose detection beckground
+
+General idea: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/  
+
+Detailed description: "Hand Keypoint Detection in Single Images using Multiview Bootstrapping" by Tomas, Simon Hanbyul Joo, Iain Matthews, Yaser Sheikh from Carnegie Mellon University (https://arxiv.org/pdf/1704.07809.pdf).
