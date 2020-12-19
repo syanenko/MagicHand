@@ -85,7 +85,7 @@ uniform vec4      u_mouse_click; // - Mouse click position and state as retuned 
 uniform vec2      u_hand[22];    // - Hand points, detected by DNN module
 ```
 
-Glut functions reference:
+Glut functions reference:  
 https://www.opengl.org/resources/libraries/glut/spec3/node51.html  
 https://www.opengl.org/resources/libraries/glut/spec3/node50.html  
   
