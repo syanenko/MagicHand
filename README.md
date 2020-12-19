@@ -23,9 +23,9 @@ Explore OpenCV, DNN, OpenGL interoperability, play with GLSL
 1. Download and install FreeGlut: http://freeglut.sourceforge.net/  
 1. Download and install Glew: http://glew.sourceforge.net/
 1. Open MagicHand solution in Visual Studio 2017 or later, then open MagicHand project's properties.
-1. Change appropriate include directories in section `/C++/General/Additional Include Directories` and library directories in section `Linker/General/Additional Library Directories` according to locations of above dependencies.
+1. Change appropriate include directories in section *'/C++/General/Additional Include Directories'* and library directories in section *'Linker/General/Additional Library Directories'* according to locations of above dependencies.
 1. Build desired configuration
-1. Be sure that *freeglut.dll* and *glew32.dll* are in the path or place them in `<your_location>\MagicHand\bin`.
+1. Be sure that *freeglut.dll* and *glew32.dll* are in the path or place them in *'<your_location>\MagicHand\bin'*.
 1. Run: Ctrl+F5 or
 ```
 cd <your_location>\MagicHand
