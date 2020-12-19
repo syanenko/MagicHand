@@ -20,7 +20,7 @@ Exploring OpenCV, DNN, OpenGL, GLSL interoperability
 1. Download DNN model: https://drive.google.com/file/d/1nms4M5plslVEG1RSzLQVydi8Df7KiaLs/view?usp=sharing (or use getModels.sh)  
 and unzip to `<your_location>\MagicHand\model`  
   
-1. Download binaries (Win64): https://drive.google.com/file/d/1-nObusdSg19UWQVhH7SOuO40d_cJjhw4/view?usp=sharing  
+1. Download required dlls: https://drive.google.com/file/d/115ty4cpAiCNTgYNGquw9NbH4c7g5JztJ/view?usp=sharing 
 and unzip to `<your_location>\MagicHand\bin`  
 
 1. Run
