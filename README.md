@@ -89,7 +89,7 @@ Glut functions reference:
 https://www.opengl.org/resources/libraries/glut/spec3/node51.html  
 https://www.opengl.org/resources/libraries/glut/spec3/node50.html  
   
-#### Hand pose detection beckground
+#### Hand pose detection background
 
 General idea: https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/  
 
