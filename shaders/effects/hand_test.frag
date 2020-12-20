@@ -12,6 +12,7 @@ uniform vec2      u_resolution;
 uniform float     u_time;
 uniform vec2      u_mouse_move;
 uniform vec4      u_mouse_click;
+uniform vec2      u_hand[22];
 
 void main( void )
  {
