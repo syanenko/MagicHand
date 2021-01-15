@@ -1,4 +1,4 @@
-## Magic hand
+# Magic hand
 #### What  
 Hand pose detection with OpenCV/DNN, applying shaders effects with OpenGL/GLUT/GLSL.  
 #### Who  
