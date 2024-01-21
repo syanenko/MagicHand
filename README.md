@@ -1,13 +1,11 @@
 # Magic hand
-#### What  
+-- <em>What</em><br>
 Hand pose detection with OpenCV/DNN, applying shaders effects with OpenGL/GLUT/GLSL.  
-#### Who  
-Sergey Yanenko  
-#### Why  
+
+-- <em>Why</em><br>
 Explore OpenCV, DNN, OpenGL interoperability, play with GLSL  
-#### When 
-12/2020
-#### How  
+
+-- <em>How  </em><br>
 * OpenGL/GLUT/GLSL part based on Peter R. Elespuru code: https://github.com/elespuru/elespuru-cvglsl  
 * OpenCV hand pose detection based on this example:      https://github.com/opencv/opencv/blob/master/samples/dnn/openpose.cpp  
   
